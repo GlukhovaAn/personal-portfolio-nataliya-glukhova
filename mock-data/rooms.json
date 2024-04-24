@@ -1,0 +1,28 @@
+{
+    "data": [
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide1.jpg"
+      },
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide2.jpg"
+      },
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide3.jpg"
+      },
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide4.jpg"
+      },
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide5.jpg"
+      },
+      {
+        "figcaption": "Lorem ipsum",
+        "image_link": "./images/rooms/slide6.jpg"
+      }
+    ]
+  }

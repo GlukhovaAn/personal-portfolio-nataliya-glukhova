@@ -1,0 +1,222 @@
+.intro {
+  height: 100dvh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../images/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  position: relative;
+  animation-name: imageSize;
+  animation-duration: 3s;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.introTitle {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 50px auto 13px;
+  animation-duration: 4s;
+  z-index: 2;
+}
+
+.introTitle span:nth-child(1) {
+  margin-left: 17%;
+  animation-name: slideinLeft;
+  animation-duration: 3s;
+  opacity: 1;
+}
+.introTitle span:nth-child(2) {
+  margin-right: 17%;
+  animation-name: slideinRight;
+  animation-duration: 3s;
+  opacity: 1;
+}
+.introLogo {
+  width: 150px;
+  margin-top: 10%;
+  animation-name: slideinTop;
+  animation-duration: 3s;
+  opacity: 1;
+  z-index: 2;
+}
+.introBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20%;
+  animation-name: slideinBottom;
+  animation-duration: 7s;
+  opacity: 1;
+  z-index: 2;
+  padding: 0 10px;
+}
+.introSubTitle {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.introDescription {
+  max-width: 700px;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.introBtn {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px solid #c7a034;
+  background-color: transparent;
+  padding: 15px 50px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+    border-color 0.4s ease-in-out;
+}
+.introBtn:hover {
+  background-color: #c7a034;
+}
+@keyframes slideinLeft {
+  from {
+    opacity: 0;
+    margin-left: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: 17%;
+  }
+}
+@keyframes slideinLeftMobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideinRight {
+  from {
+    opacity: 0;
+    margin-right: 0;
+  }
+  to {
+    opacity: 1;
+    margin-right: 17%;
+  }
+}
+
+@keyframes slideinRightMobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideinTop {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10%;
+  }
+}
+
+@keyframes slideinTopMobile {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 36%;
+  }
+}
+
+@keyframes slideinBottom {
+  from {
+    opacity: 0;
+    margin-bottom: 0;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 20%;
+  }
+}
+
+@keyframes imageSize {
+  from {
+    background-size: 200%;
+  }
+  to {
+    background-size: 120%;
+  }
+}
+
+@keyframes imageSizeTablet {
+  from {
+    background-size: 250%;
+  }
+  to {
+    background-size: 200%;
+  }
+}
+@media (max-width: 1200px) {
+  .intro {
+    background-size: 200%;
+    animation-name: imageSizeTablet;
+  }
+}
+@media (max-width: 1024px) {
+  .intro {
+    background-size: auto;
+    animation-name: none;
+  }
+  .introTitle {
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+    width: auto;
+  }
+  .introTitle span:nth-child(1) {
+    margin-left: 0;
+    animation-name: slideinLeftMobile;
+  }
+  .introTitle span:nth-child(2) {
+    margin-right: 0;
+    animation-name: slideinRightMobile;
+  }
+}
+@media (max-width: 768px) {
+  .introTitle {
+    font-size: 32px;
+  }
+  .introLogo {
+    margin-top: 36%;
+    animation-name: slideinTopMobile;
+  }
+}

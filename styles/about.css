@@ -1,0 +1,31 @@
+.about {
+    background: dark
+    }
+    .about_section {
+    display: flex;
+     Direction: columns;
+    gap: 20px;
+    margin: 180px;
+    }
+    .about_column1{
+    width:100%;
+    height: 100%;
+    position: relative
+    } // if the image will climb out behind the container, then try overflow-y: hidden in the class above
+    .about me_photo {
+    height:100%
+    }
+    .about_title {
+    text color: 
+    fat content: 700
+    size: 56 pixels...
+    bottom margin: 30 pixels
+    }
+    .about_parameter {
+    // by analogy as with the header
+    }
+    .both are logotype {
+    position: absolute
+    top: 0
+    right: 0 // or you can set a relative position for both so that the logo goes beyond the photo
+    }
