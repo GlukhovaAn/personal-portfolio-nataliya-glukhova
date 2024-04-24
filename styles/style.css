@@ -42,7 +42,6 @@ body {
   padding-bottom: 20px;
   animation-name: header-scroll-up;
   animation-duration: 1s;
-
 }
 .logo {
   font-size: 25px;
@@ -90,25 +89,25 @@ body {
   height: 50px;
   background: yellowgreen;
 }
-.navbarBtn{
+.navbarBtn {
   display: none;
   border: none;
   background: transparent;
   cursor: pointer;
   align-items: center;
 }
-.navbarBtnImg{
-display: none;
-width: 30px;
+.navbarBtnImg {
+  display: none;
+  width: 30px;
 }
-.navbarBtnImg.active{
-display: inline;
+.navbarBtnImg.active {
+  display: inline;
 }
-@media  (max-width: 768px){
-  .navbarBtn{
+@media (max-width: 768px) {
+  .navbarBtn {
     display: flex;
   }
-  .navbar{
+  .navbar {
     display: none;
     position: absolute;
     flex-direction: column;
@@ -116,7 +115,7 @@ display: inline;
     left: 0;
     width: 100%;
   }
-  .navbar.active{
+  .navbar.active {
     display: flex;
   }
   .navbar a {
@@ -157,6 +156,8 @@ section {
   margin: 0 auto;
   padding-bottom: 90px;
 }
-  
 
-
+footer {
+  height: 100px;
+  background-color: red;
+}
