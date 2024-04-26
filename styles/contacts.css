@@ -1,0 +1,58 @@
+.contacts {
+  height: 100vh;
+  padding-bottom: 100px;
+  margin-top: 500px;
+  background-image: linear-gradient(90deg, #2f5349 56%, rgba(0, 0, 0, 0) 56%),
+    url(https://design-cube.ru/wp-content/uploads/2022/04/flooring-19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__container {
+}
+.contacts_column1 {
+}
+.contacts_column2 {
+}
+
+.contacts__logo {
+}
+
+.contacts__text--lg {
+}
+
+.contacts__text--lg a {
+}
+
+.contacts__socials {
+}
+
+.contacts__socials img {
+}
+
+.contacts__social a {
+}
+
+.contacts__social span {
+}
+
+.contacts__form {
+}
+
+.contacts__input {
+}
+
+.contacts__checkbox-label {
+}
+
+.contacts__checkbox-label a {
+}
+
+.contacts__checkbox {
+}
+
+.contacts__submit-btn {
+}
+
+.contacts__submit-btn:hover {
+}
