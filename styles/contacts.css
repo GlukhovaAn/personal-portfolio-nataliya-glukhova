@@ -1,0 +1,146 @@
+.contacts {
+  height: 100vh;
+  padding-bottom: 100px;
+  margin-top: 500px;
+  background-image: linear-gradient(90deg, #2f5349 56%, rgba(0, 0, 0, 0) 56%),
+    url(https://design-cube.ru/wp-content/uploads/2022/04/flooring-19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__container {
+  width: 90%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5%;
+  color: #fff;
+}
+
+.contacts_column1 {
+  background-color: #2f5349;
+  flex-grow: 1;
+  height: 100%;
+  padding-top: 100px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  flex: 1 0 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.contacts_column2 {
+  flex: 1 0 47%;
+  height: 100%;
+  padding-top: 185px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+
+.contacts__logo {
+  width: 100px;
+}
+
+.contacts__text--lg {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.contacts__text--lg a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts__socials {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts__socials img {
+  width: 30px;
+}
+
+.contacts__social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.contacts__social span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contacts__input {
+  border: 1px solid #bbb;
+  color: #4e4e4e;
+  padding: 20px 30px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.contacts__checkbox-label {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contacts__checkbox-label a {
+  color: #fff;
+}
+
+.contacts__checkbox {
+  margin-right: 5px;
+}
+
+.contacts__submit-btn {
+  font-size: 17px;
+  background-color: #fff;
+  border: 5px solid #fff;
+  color: #000;
+  padding: 15px 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.contacts__submit-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .contacts__container {
+    flex-direction: column;
+  }
+  .contacts_column2 {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+}

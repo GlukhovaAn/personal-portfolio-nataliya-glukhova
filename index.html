@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta
       name="viewport"
       content="width=device-width,
@@ -18,7 +16,6 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-
   <body>
     <header class="header">
       <a href="#" class="logo">Jacob. </a>
@@ -162,7 +159,54 @@
       </div>
       <img src="./images/32796.svg" class="about_elemnt" />
     </section>
-    <footer></footer>
+    <section class="section contacts">
+      <div class="contacts__container">
+        <div class="contacts_column1">
+          <img src="./images/CUBE.svg" class="contacts__logo" />
+          <h2 class="contacts__text--lg">Ждём Ваших идей, свяжитесь с нами</h2>
+          <p class="contacts__text--lg">
+            <a href="tel:+79129995813">+7 912 999 58 13</a>
+          </p>
+          <ul class="contacts__socials">
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/telegram.svg" /><span>Telegram</span></a
+              >
+            </li>
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/whatsapp.svg" /><span>WhatsApp</span></a
+              >
+            </li>
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/vk-logo.svg" /><span>ВКонтакте</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contacts_column2">
+          <h2 class="contacts__text--lg">Или оставьте заявку</h2>
+          <form class="contacts__form" action="">
+            <input type="text" class="contacts__input" placeholder="Имя" />
+            <input type="text" class="contacts__input" placeholder="Телефон" />
+            <label for="checkbox" class="contacts__checkbox-label"
+              ><input
+                type="checkbox"
+                class="contacts__checkbox"
+                id="checkbox"
+              />Я согласен на обработку
+              <a href="#">персональных данных</a></label
+            >
+            <input
+              type="submit"
+              value="Отправить"
+              class="contacts__submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="module" src="./script/advantages-slider.js"></script>
