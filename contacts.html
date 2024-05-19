@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+    initial-scale=1.0"
+    />
+    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Jacob. </a>
+      <nav class="navbar">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./contacts.html">Contact</a>
+      </nav>
+      <button class="navbarBtn">
+        <img
+          class="navbarBtnImg active"
+          id="open-navbar"
+          src="./images/menu-svgrepo-com.svg"
+        />
+        <img
+          class="navbarBtnImg"
+          id="close-navbar"
+          src="./images/close-1511-svgrepo-com.svg"
+        />
+      </button>
+    </header>
+    <section class="about_section section">
+      <div class="about_columns">
+        <div class="about_column1">
+          <img src="./images/Natalya.jpeg" class="about_photo" />
+          <img class="about_logotype" src="./images/CUBE.svg" />
+        </div>
+        <div class="about_column2">
+          <h2 class="about_title">Lorem Ipsum</h2>
+          <p class="about_paragraph">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <p class="about_paragraph">
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+          <p class="about_paragraph">
+            t was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages,
+          </p>
+          <p class="about_paragraph">
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+      <img src="./images/32796.svg" class="about_elemnt" />
+    </section>
+    <section class="section contacts">
+      <div class="contacts__container">
+        <div class="contacts_column1">
+          <img src="./images/CUBE.svg" class="contacts__logo" />
+          <h2 class="contacts__text--lg">Ждём Ваших идей, свяжитесь с нами</h2>
+          <p class="contacts__text--lg">
+            <a href="tel:+79129995813">+7 912 999 58 13</a>
+          </p>
+          <ul class="contacts__socials">
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/telegram.svg" /><span>Telegram</span></a>
+              </li>
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/whatsapp.svg" /><span>WhatsApp</span></a>
+              </li>
+            <li class="contacts__social">
+              <a href="#">
+                <img src="./images/vk-logo.svg" /><span>ВКонтакте</span></a>
+              </li>
+            </ul>
+              </div>
+        <div class="contacts_column2">
+          <h2 class="contacts__text--lg">Или оставьте заявку</h2>
+          <form class="contacts__form" action="">
+            <input type="text" class="contacts__input" placeholder="Имя" />
+            <input type="text" class="contacts__input" placeholder="Телефон" />
+            <label for="checkbox" class="contacts__checkbox-label"
+              ><input
+                type="checkbox"
+                class="contacts__checkbox"
+                id="checkbox"
+              />Я согласен на обработку
+              <a href="#">персональных данных</a></label
+            >
+            <input
+              type="submit"
+              value="Отправить"
+              class="contacts__submit-btn"
+            />
+          </form>
+              </div>
+            </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./script/advantages-slider.js"></script>
+  <script type="module" src="./script/rooms-slider.js"></script>
+  <script src="./script/script.js"></script>
+</html>
