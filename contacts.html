@@ -8,21 +8,16 @@
       content="width=device-width,
     initial-scale=1.0"
     />
-    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Jacob. </a>
+      <a href="#" class="logo">Глухова</a>
       <nav class="navbar">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./contacts.html">Contact</a>
+        <a href="./index.html">Главная</a>
+        <a href="./portfolio.html">О нас</a>
+        <a href="./contacts.html">Контакты</a>
       </nav>
       <button class="navbarBtn">
         <img
@@ -33,7 +28,7 @@
         <img
           class="navbarBtnImg"
           id="close-navbar"
-          src="./images/close-1511-svgrepo-com.svg"
+          src="./images/close-white.svg"
         />
       </button>
     </header>
@@ -77,43 +72,63 @@
           <ul class="contacts__socials">
             <li class="contacts__social">
               <a href="#">
-                <img src="./images/telegram.svg" /><span>Telegram</span></a>
-              </li>
+                <img src="./images/telegram.svg" /><span>Telegram</span></a
+              >
+            </li>
             <li class="contacts__social">
               <a href="#">
-                <img src="./images/whatsapp.svg" /><span>WhatsApp</span></a>
-              </li>
+                <img src="./images/whatsapp.svg" /><span>WhatsApp</span></a
+              >
+            </li>
             <li class="contacts__social">
               <a href="#">
-                <img src="./images/vk-logo.svg" /><span>ВКонтакте</span></a>
-              </li>
-            </ul>
-              </div>
+                <img src="./images/vk-logo.svg" /><span>ВКонтакте</span></a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="contacts_column2">
           <h2 class="contacts__text--lg">Или оставьте заявку</h2>
           <form class="contacts__form" action="">
-            <input type="text" class="contacts__input" placeholder="Имя" />
-            <input type="text" class="contacts__input" placeholder="Телефон" />
+            <input
+              type="text"
+              class="contacts__input"
+              id="name"
+              placeholder="Имя"
+            />
+            <input
+              type="text"
+              class="contacts__input"
+              id="phone"
+              placeholder="Телефон"
+            />
             <label for="checkbox" class="contacts__checkbox-label"
               ><input
                 type="checkbox"
                 class="contacts__checkbox"
                 id="checkbox"
+                checked
               />Я согласен на обработку
               <a href="#">персональных данных</a></label
             >
             <input
               type="submit"
+              id="submit"
               value="Отправить"
               class="contacts__submit-btn"
             />
           </form>
-              </div>
-            </div>
+        </div>
+      </div>
     </section>
+    <dialog id="pop-up" class="popup">
+      <img src="./images/close-black.svg" class="popup__close" />
+      <p>
+        <span id="user-name"></span>, мы с Вами свяжемся по номеру
+        <span id="user-phone"></span>
+      </p>
+    </dialog>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script type="module" src="./script/advantages-slider.js"></script>
-  <script type="module" src="./script/rooms-slider.js"></script>
   <script src="./script/script.js"></script>
+  <script src="./script/contacts.js"></script>
 </html>
