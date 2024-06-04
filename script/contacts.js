@@ -12,12 +12,24 @@ btnSubmit.addEventListener("click", (e) => {
   if (nameInput.value && phoneInput.value) {
     userName.textContent = nameInput.value;
     userPhone.textContent = phoneInput.value;
+    popUpElement.style.display = "flex";
     popUpElement.showModal();
   }
 });
 
-closeBtn.addEventListener("click", () => {
+function reset() {
+  nameInput.value = "";
+  phoneInput.value = "";
+}
+
+function closeModal() {
   popUpElement.close();
+  popUpElement.style.display = "none";
+  reset();
+}
+
+closeBtn.addEventListener("click", () => {
+  closeModal();
 });
 
 const handleModalClick = (event) => {
@@ -29,7 +41,7 @@ const handleModalClick = (event) => {
     event.clientY < modalRect.top ||
     event.clientY > modalRect.bottom
   ) {
-    popUpElement.close();
+    closeModal();
   }
 };
 
